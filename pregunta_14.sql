@@ -44,7 +44,6 @@
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
 
-SELECT K0, AVG(C21)
-from (SELECT * FROM tbl1 WHERE c13 > 400) AS tabla1
+SELECT K0, AVG(C21) FROM (SELECT * FROM tbl1 WHERE c13 > 400) AS tabla1
 INNER JOIN tbl2 ON tabla1.K1 = tbl2.K1
 GROUP BY K0
